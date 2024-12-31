@@ -9,7 +9,6 @@
     Aqui vai alguns valores para esse seletor:
     box-sizing: content-box; Formato padrao, vai mudar a altura e a largura somente do conteudo.
     box-sizing: border-box; Quando for estelizar a altura e largura, vamos estar auterando a bordar e o padding do elemento.
-
     */
 }
 

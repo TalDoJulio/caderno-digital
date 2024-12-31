@@ -4,8 +4,87 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rascunho</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&family=Roboto+Flex:opsz,wght@8..144,100..1000&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+        :root {
+            --font-roboto-mono: "Roboto Mono", serif;
+            --font-cabin: "Cabin", serif;
+            --font-roboto-flex: "Roboto Flex", serif;
+            --bege: #E0A6D4;
+            --rosa: #E101BA;
+            --azul: #010AE1;
+            --roxo: #8E00E0;
+        }
+        * {
+            margin: 0px;
+            padding: 0px;
+            font-family: var(--font-roboto-flex);
+            box-sizing: border-box;
+        }
+        body {
+            background-color: black;
+        }
+        header {
+            background-color: var(--azul);
+        }
+        nav {
+            background-color: var(--roxo);
+
+        }
+        main {
+            background-color: var(--bege);
+            display: flex;
+            width: 90%;
+            margin: 0px auto;
+        }
+        section {
+            float: left;
+
+        }
+        article {
+            float: right;
+        }
+
+
+        footer {
+            background-color: black;
+            color: white;
+            font-size: 1rem;
+        }
+        footer > h1 {
+            font-size: 1rem;
+            text-align: center;
+        }
+    </style>
 </head>
 <body>
-    
+    <header>
+        <h1>Cabeçalho</h1>
+        <p>Vamos aprender a estelilizar site.</p>
+    </header>
+    <nav>
+        <a href="rascunho001.html" target="_blank" rel="author">Rascunho 1</a>
+        <a href="#">Atual</a>
+        <a href="#">Rascunho 3</a>
+        <a href="#">Rascunho 4</a>
+        <a href="#">Rascunho 5</a>
+    </nav>
+    <main>
+        <section>
+            <h1>Titulo Principal</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit quo fugit pariatur? Pariatur, ipsa adipisci aut cumque eos fuga maiores iste illum laborum facilis veniam a corrupti at quia! Amet.</p>
+            <article>
+                <h2>Artigo da secão</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores beatae amet perferendis vitae. Dolorem asperiores veniam tenetur atque dolore. Molestiae expedita ipsam rerum consequatur velit, asperiores qui exercitationem officiis maiores!</p>
+            </article>
+        </section>
+        <aside>
+            <h2>Conteudo periferico</h2>
+            <iframe src="rascunho001.html" frameborder="0"></iframe>
+        </aside>
+    </main>
+    <footer>
+        <h1>Rodape&copy;</h1>
+    </footer>
 </body>
 </html>
