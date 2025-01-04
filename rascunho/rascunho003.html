@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&family=Roboto+Flex:opsz,wght@8..144,100..1000&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+        :root {
+            --font-roboto-mono: "Roboto Mono", serif;
+            --font-cabin: "Cabin", serif;
+            --font-roboto-flex: "Roboto Flex", serif;
+        }
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+            font-family: var(--font-roboto-flex);
+        }
+        body {
+            background-color: black;
+            height: 100%;
+        }
+
+        header {
+            background-color: #e4dfd7;
+            text-align: center;
+            font-size: 1vw;
+        }
+        main {
+            display: block;
+            background-color: white;
+            width: 800px;
+            height: calc(954px - 80px - 19px - 2rem);
+            margin: 20px auto;
+            padding: 1rem;
+            border: 1px solid rgb(255, 0, 0);
+            box-shadow: 2px 2px 4px rgb(255, 0, 0);
+        }
+        main section.block {
+            display: block;
+            background-color: aqua;
+            text-align: center;
+        }
+
+        main section.inline {
+            background-color: chartreuse;
+            padding: 10px;
+            display: inline;
+        }
+
+        main section.inline-block1 {
+            background-color: #d8cfc1;
+            display: inline-block;
+        }
+
+        main section.inline-block2 {
+            background-color: #dbcfbe;
+            display: inline-block;
+        }
+        main section.inline-block3 {
+            background-color: #c9c2b8;
+            display: inline-block;
+        }
+        main section.inline-block4 {
+            background-color: #dfbc8c;
+            display: inline-block;
+        }
+
+
+
+
+
+
+
+
+        footer {
+            background-color: #e4ded5;
+            text-align: center;
+            font-size: 0.5rem;
+            
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Tratamento com display</h1>
+        <p>Tamanho da viewport = 1912×954</p>
+        <p>Tela windows = 1920×1032</p>
+    </header>
+    <main>
+        <section class="block">
+            <h2>Display: Block;</h2>
+        </section>
+        <div>
+            <section class="inline">
+                <h2 style="display: inline;">Display: Inline;</h2>
+            </section>
+            <section class="inline">
+                <h2 style="display: inline;">Display: Inline;</h2>
+            </section>
+            <section class="inline">
+                <h2 style="display: inline;">Display: Inline;</h2>
+            </section>
+            <section class="inline">
+                <h2 style="display: inline;">Display: Inline;</h2>
+            </section>
+        </div>
+
+
+        <div>
+            <section class="inline-block1">
+                <h2 style="display: inline-block;">Display: Inline-Block</h2>
+                <p>Teste com display: inline-block;</p>
+            </section>
+
+            <section class="inline-block2">
+                <h2 style="display: inline-block;">Display: Inline-Block</h2>
+                <p>Teste com display: inline-block;</p>
+            </section>
+
+            <section class="inline-block3">
+                    <h2 style="display: inline-block;">Display: Inline-Block</h2>
+                    <p>Teste com display: inline-block;</p>
+            </section>
+
+            <section class="inline-block4">
+                <h2>Diplay: inline-block;</h2>
+                <p>Teste com display: inline-block;</p>
+            </section>
+
+        </div>
+    </main>
+    <footer>
+        <h1>Teste com Display</h1>
+    </footer>
+
+</body>
+</html>
