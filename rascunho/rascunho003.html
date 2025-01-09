@@ -22,118 +22,53 @@
             height: 100%;
         }
 
-        header {
-            background-color: #e4dfd7;
-            text-align: center;
-            font-size: 1vw;
-        }
         main {
-            display: block;
-            background-color: white;
-            width: 800px;
-            height: calc(954px - 80px - 19px - 2rem);
-            margin: 20px auto;
-            padding: 1rem;
-            border: 1px solid rgb(255, 0, 0);
-            box-shadow: 2px 2px 4px rgb(255, 0, 0);
+            display: grid;
+            grid-template-areas: 
+            "header header header"
+            "aside section sction"
+            "footer footer footer"
+            ;
         }
-        main section.block {
-            display: block;
-            background-color: aqua;
+
+
+        header {
+            background-color: wheat;
             text-align: center;
+            grid-area: header;
         }
-
-        main section.inline {
-            background-color: chartreuse;
-            padding: 10px;
-            display: inline;
+        aside {
+            background-color: white;
+            grid-area: aside;
         }
-
-        main section.inline-block1 {
-            background-color: #d8cfc1;
-            display: inline-block;
+        section {
+            background-color: whitesmoke;
+            grid-area: section;
         }
-
-        main section.inline-block2 {
-            background-color: #dbcfbe;
-            display: inline-block;
-        }
-        main section.inline-block3 {
-            background-color: #c9c2b8;
-            display: inline-block;
-        }
-        main section.inline-block4 {
-            background-color: #dfbc8c;
-            display: inline-block;
-        }
-
-
-
-
-
-
 
 
         footer {
-            background-color: #e4ded5;
+            background-color: wheat;
             text-align: center;
-            font-size: 0.5rem;
-            
+            grid-area: footer;
         }
     </style>
 </head>
 <body>
-    <header>
-        <h1>Tratamento com display</h1>
-        <p>Tamanho da viewport = 1912×954</p>
-        <p>Tela windows = 1920×1032</p>
-    </header>
     <main>
-        <section class="block">
-            <h2>Display: Block;</h2>
+        <header>
+            <h1>Reprodutor de musicas</h1>
+            <p>Todas as musicas contem direitos autorais &copy;</p>
+        </header>
+        <aside>
+            <h2>Escolha uma musica</h2>
+        </aside>
+        <section>
+            <h2>Aqui ira aparecer a musica</h2>
         </section>
-        <div>
-            <section class="inline">
-                <h2 style="display: inline;">Display: Inline;</h2>
-            </section>
-            <section class="inline">
-                <h2 style="display: inline;">Display: Inline;</h2>
-            </section>
-            <section class="inline">
-                <h2 style="display: inline;">Display: Inline;</h2>
-            </section>
-            <section class="inline">
-                <h2 style="display: inline;">Display: Inline;</h2>
-            </section>
-        </div>
-
-
-        <div>
-            <section class="inline-block1">
-                <h2 style="display: inline-block;">Display: Inline-Block</h2>
-                <p>Teste com display: inline-block;</p>
-            </section>
-
-            <section class="inline-block2">
-                <h2 style="display: inline-block;">Display: Inline-Block</h2>
-                <p>Teste com display: inline-block;</p>
-            </section>
-
-            <section class="inline-block3">
-                <h2 style="display: inline-block;">Display: Inline-Block</h2>
-                <p>Teste com display: inline-block;</p>
-            </section>
-
-            <section class="inline-block4">
-                <h2>Display: Inline-Block</h2>
-                <p>Teste com display: inline-block;</p>
-            </section>
-
-        </div>
+        <footer>
+            <p>Lembrando que todas as musicas contem direito autoral &copy;</p>
+        </footer>
     </main>
-    <footer>
-        <h1>Teste com Display</h1>
-    </footer>
-
 </body>
 </html>
