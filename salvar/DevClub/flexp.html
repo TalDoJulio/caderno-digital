@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Project</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+        body {
+            height: 100vh;
+            width: 100vw;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        main {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            max-width: 80%;
+            gap: 10px;
+        }
+        section {
+            border: 2px solid #1f2937;
+            border-radius: 5px;
+            display: flex;
+            flex-basis: 250px;
+            flex-grow: 1;
+            flex-direction: column;
+        }
+        ul {
+            margin: 30px;
+        }
+
+        .salary {
+            display: flex;
+            align-items: center;
+        }
+
+        h2 {
+            font-size: 2.5rem;
+            text-align: center;
+            background-color: #9ca3af;
+            padding: 10px;
+        }
+        h3 {
+            margin: 20px;
+            background-image: linear-gradient(to left, #86efac, #22c55e, #166534);
+            padding: 3px;
+            border-radius: 5px;
+            color: white;
+        }
+        section:nth-child(3) h2 {
+            background-color: #6d28d9;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <section>
+            <h2>Júnior</h2>
+            <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+            </ul>
+            <div class="salary">
+                <h3>Salário</h3>
+                <p>R$ 4.500,00</p>
+            </div>
+        </section>
+        <section>
+            <h2>Pleno</h2>
+            <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>React</li>
+                <li>Node</li>
+            </ul>
+            <div class="salary">
+                <h3>Salário</h3>
+                <p>R$ 12.000,00</p>
+            </div>
+        </section>
+        <section>
+            <h2>Senior</h2>
+            <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>React</li>
+                <li>Node</li>
+                <li>Next</li>
+                <li>Nest</li>
+            </ul>
+            <div class="salary">
+                <h3>Salário</h3>
+                <p>R$ 20.000,00</p>
+            </div>
+        </section>
+
+
+    </main>
+</body>
+</html>
